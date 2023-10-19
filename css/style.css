@@ -11,9 +11,11 @@ body {
   font-family: "Roboto", sans-serif;
   font-family: "Work Sans", sans-serif;
   height: 10000px;
+  
 }
 :root {
   --main-color: #83b735;
+  --sec-color: #f3f2f0;
 }
 .container {
   max-width: 1222px;
@@ -666,7 +668,9 @@ main .image {
 }
 
 /* collection section  */
-
+.collections{
+  background-color: var(--sec-color);
+}
 .collections-items {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -842,7 +846,7 @@ main .image {
 
 .item6 .collection-hotspot .hotspot1 {
   left: 25%;
-    top: 20%;
+  top: 20%;
 }
 
 .item6 .collection-hotspot .hotspot2 {
@@ -954,6 +958,7 @@ main .image {
   line-height: 1.5;
   margin: 10px 0;
   color: #545454;
+  padding:10px;
 }
 
 .collection-hotspot .hotspot .content a {
@@ -971,4 +976,125 @@ main .image {
 
 .collection-hotspot .hotspot:hover .content {
   display: block;
+}
+
+/* week collections section  */
+.week-collections{
+  background-color: var(--sec-color);
+}
+.week-collections .container {
+  padding: 100px 0;
+  display: flex;
+}
+
+.week-collections .container .image img {
+  border-radius: 10px;
+}
+
+.week-collections .container .image {
+  position: relative;
+}
+
+.week-collections .image .hotspot1 {
+  top: 42%;
+  left: 31%;
+}
+
+.week-collections .image .hotspot2 {
+  top: 67%;
+  left: 20%;
+}
+
+.week-collections .image .hotspot3 {
+  top: 77%;
+  left: 60%;
+}
+
+.week-collections .special-header {
+  text-align: left;
+  margin-right: auto;
+  width: 100%;
+}
+
+.week-collections .special-header .title {
+  font-size: 30px;
+}
+
+.week-collections .container .card-items {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.week-collections .card {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.week-collections .card-info {
+  transform: translateY(60px);
+  transition: 0.5s;
+}
+
+.week-collections .card:hover .card-info {
+  transform: translateY(0);
+}
+.week-collections .card .card-info-title {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.week-collections .card .card-info-desc {
+  color: #3f3f3f;
+  margin: 10px 0;
+}
+
+.week-collections .card .card-info-price {
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+.week-collections .card-info-hidden {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.week-collections .card-info-hidden a {
+  display: block;
+  text-decoration: none;
+  width: 180px;
+  height: 40px;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.week-collections .card-items .card > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-info-hidden img {
+  margin: 0 20px;
+}
+.card-info-hidden img {
+  width: 20px;
+  height: 20px;
+}
+
+.week-collections .card > i {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  color: #444343;
 }
